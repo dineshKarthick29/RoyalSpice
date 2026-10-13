@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+exec pnpm run dev -- --port "${PORT:-8443}" --host "${FIGMA_DEV_SERVER_HOST:-0.0.0.0}"
