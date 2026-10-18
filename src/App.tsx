@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from "react";
+import Reservation from "./Reservation";
 
 const photos = {
   hero: "https://images.unsplash.com/photo-1676436293945-a613dde9c3b6?auto=format&fit=crop&w=1800&q=88",
@@ -8,6 +9,8 @@ const photos = {
   dining: "https://images.unsplash.com/photo-1582228096960-7f5d2ec4aa8e?auto=format&fit=crop&w=1200&q=85",
   interior: "https://images.unsplash.com/photo-1651684081211-602801541b08?auto=format&fit=crop&w=1000&q=85",
 };
+
+const WHATSAPP_NUMBER = "919876543210";
 
 type IconName =
   | "arrow"
@@ -156,7 +159,7 @@ export default function App() {
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-semibold text-white/80 lg:flex">
-            {["Home", "About", "Menu", "Gallery", "Contact"].map((item) => (
+            {["Home", "About", "Menu", "Gallery", "Reservation", "Contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -168,7 +171,7 @@ export default function App() {
           </nav>
 
           <a
-            href="https://wa.me/918608621470"
+            href={`https://wa.me/${WHATSAPP_NUMBER}`}
             target="_blank"
             rel="noreferrer"
             className="hidden items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-deep transition hover:bg-white sm:flex"
@@ -188,7 +191,7 @@ export default function App() {
         </div>
         {menuOpen && (
           <nav className="border-t border-white/10 bg-deep px-6 py-5 lg:hidden">
-            {["Home", "About", "Menu", "Gallery", "Contact"].map((item) => (
+            {["Home", "About", "Menu", "Gallery", "Reservation", "Contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -290,7 +293,7 @@ export default function App() {
                 <p className="eyebrow">Taste the tradition</p>
                 <SectionTitle>Guest favorites</SectionTitle>
               </div>
-              <a href="#contact" className="text-link">
+              <a href="#reservation" className="text-link">
                 Reserve your table <Icon name="arrow" className="h-4 w-4" />
               </a>
             </div>
@@ -377,6 +380,8 @@ export default function App() {
           </div>
         </section>
 
+        <Reservation whatsappNumber={WHATSAPP_NUMBER} />
+
         <section id="contact" className="scroll-mt-20 bg-[#0b161c] py-20 text-white">
           <div className="page-container grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
             <div>
@@ -410,7 +415,7 @@ export default function App() {
                   </p>
                 </div>
                 <a
-                  href="https://wa.me/919876543210"
+                  href={`https://wa.me/${WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-3 rounded-full bg-[#28a85a] px-6 py-4 text-sm font-extrabold transition hover:bg-white hover:text-deep"
