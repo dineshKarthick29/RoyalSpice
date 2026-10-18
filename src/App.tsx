@@ -10,7 +10,7 @@ const photos = {
   interior: "https://images.unsplash.com/photo-1651684081211-602801541b08?auto=format&fit=crop&w=1000&q=85",
 };
 
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "918608621470";
 
 type IconName =
   | "arrow"
