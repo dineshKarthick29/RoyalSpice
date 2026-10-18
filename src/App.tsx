@@ -168,7 +168,7 @@ export default function App() {
           </nav>
 
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/918608621470"
             target="_blank"
             rel="noreferrer"
             className="hidden items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-deep transition hover:bg-white sm:flex"
