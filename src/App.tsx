@@ -392,11 +392,11 @@ export default function App() {
                 reserve your table.
               </p>
               <div className="mt-8 space-y-4 text-sm">
-                <a href="tel:+919876543210" className="contact-row">
-                  <Icon name="phone" /> +91 98765 43210
+                <a href="tel:+918608621470" className="contact-row">
+                  <Icon name="phone" /> +91 8608621470
                 </a>
                 <div className="contact-row">
-                  <Icon name="map" /> 123 Main Road, Kanchipuram, Tamil Nadu
+                  <Icon name="map" /> 123 Main Road, Gingee, Tamil Nadu
                 </div>
                 <div className="contact-row">
                   <Icon name="clock" /> Open daily: 11:00 AM — 11:00 PM
